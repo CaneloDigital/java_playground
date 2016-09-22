@@ -1,0 +1,6 @@
+2016-09-22 15:47:08.178 [main] DEBUG cl.canelodigital.playground.SampleClassMain - 
+2016-09-22 15:47:08.180 [main] DEBUG cl.canelodigital.playground.SampleClassMain - 1
+2016-09-22 15:47:08.181 [main] DEBUG cl.canelodigital.playground.dto.SampleDTO - entering getInstance
+2016-09-22 15:47:08.181 [main] DEBUG cl.canelodigital.playground.dto.SampleDTO - exiting getInstance
+2016-09-22 15:47:08.181 [main] DEBUG cl.canelodigital.playground.dto.SampleDTO - entering getInstance
+2016-09-22 15:47:08.181 [main] DEBUG cl.canelodigital.playground.dto.SampleDTO - exiting getInstance
