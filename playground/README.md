@@ -1,5 +1,6 @@
 # java_playground
 java playground project
+(The commmit seems to have been one step to high, may cause funny effects when checking out...)
 
 A basic java Project for ecplise (maven build) with a very simple startup setup, containing:
 
