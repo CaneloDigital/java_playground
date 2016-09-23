@@ -3,9 +3,11 @@ package cl.canelodigital.playground;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class SampleClassMain {
+import cl.canelodigital.playground.helpers.GeneralHelper;
+
+public class HelloWorldMain {
 	
-	private static final Logger log = LogManager.getLogger(SampleClassMain.class);
+	private static final Logger log = LogManager.getLogger(HelloWorldMain.class);
 	
 	public static StringBuffer sbStatic=new StringBuffer("");
 	public StringBuffer sb=new StringBuffer("");
@@ -18,7 +20,14 @@ public class SampleClassMain {
 		sbStatic.append("!!!");
 		System.out.println(sbStatic.toString());
 		
+		testSingleton();
+		
 		log.debug("Finished SampleClassMain.main");
+	}
+	
+	private static void testSingleton(){
+		GeneralHelper helper=GeneralHelper.getInstance();
+		helper.printSomething();
 	}
 	
 	public String testMethodsbStatic(){

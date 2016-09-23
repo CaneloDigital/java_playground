@@ -8,10 +8,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestSampleClassMain {
+import cl.canelodigital.playground.helpers.GeneralHelper;
 
-	private SampleClassMain testObject=new SampleClassMain();
-	private static final Logger log = LogManager.getLogger(SampleClassMain.class);
+public class TestHelloWorldMain {
+
+	private HelloWorldMain testObject=new HelloWorldMain();
+	private static final Logger log = LogManager.getLogger(HelloWorldMain.class);
 	
 	@Before
 	public void setUp() throws Exception {
@@ -29,8 +31,8 @@ public class TestSampleClassMain {
 	
 	@Test
 	public void test2() {
-		SampleClassMain testObject1=new SampleClassMain();
-		SampleClassMain testObject2=new SampleClassMain();
+		HelloWorldMain testObject1=new HelloWorldMain();
+		HelloWorldMain testObject2=new HelloWorldMain();
 		
 		testObject2.sb.append("1");
 		log.debug(testObject1.testMethod1());
@@ -38,6 +40,12 @@ public class TestSampleClassMain {
 		assertNotEquals(testObject1.testMethod1(),testObject2.testMethod1());
 	}
 	
+	public void testUnique() {
+	      log.info("checking singletons for equality");
+	      GeneralHelper sone = GeneralHelper.getInstance();
+	      GeneralHelper stwo = GeneralHelper.getInstance();
+	      assertEquals(true, sone == stwo);
+	}
 	
 
 }
