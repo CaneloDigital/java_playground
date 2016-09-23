@@ -40,12 +40,5 @@ public class TestHelloWorldMain {
 		assertNotEquals(testObject1.testMethod1(),testObject2.testMethod1());
 	}
 	
-	public void testUnique() {
-	      log.info("checking singletons for equality");
-	      GeneralHelper sone = GeneralHelper.getInstance();
-	      GeneralHelper stwo = GeneralHelper.getInstance();
-	      assertEquals(true, sone == stwo);
-	}
-	
 
 }

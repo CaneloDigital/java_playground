@@ -6,7 +6,8 @@ import org.junit.runners.Suite;
 	@RunWith(Suite.class)
 	@Suite.SuiteClasses({
 	  TestHelloWorldMain.class,
-	  TestSingleton.class
+	  TestSingleton.class,
+	  TestGeneralHelper.class
 	})
 
 	public class TestAll {

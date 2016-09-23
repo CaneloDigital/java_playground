@@ -5,8 +5,8 @@ import org.apache.logging.log4j.Logger;
 
 public class GeneralHelper {
 
-	private static final GeneralHelper instance = new GeneralHelper();
-	private static final Logger log = LogManager.getRootLogger();
+	private static GeneralHelper instance = null;
+	private static final Logger log = LogManager.getLogger(GeneralHelper.class);
 
 	/**
 	* Constructor
@@ -28,7 +28,13 @@ public class GeneralHelper {
 	}
 
 	public static GeneralHelper getInstance() {
-	      return instance;
+		   log.debug("entering getInstance");
+		      if(instance == null) {
+		         instance = new GeneralHelper();
+		      }
+		      
+		      log.debug("exiting getInstance");
+		      return instance;
 	}
 	   
 	   public void printSomething(){
